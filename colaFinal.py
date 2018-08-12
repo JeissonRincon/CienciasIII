@@ -33,22 +33,33 @@ class Cola:
         return [(x,y) for x in self.nombres() for y in self.placas()]
     def revolver(self):
         return sample(self.entrada(),len(self.entrada()))
-    
+    def funcionar(self):
+        verificacion="S"
+        while(verificacion=="S" or verificacion=="s"):
+            print("Bienvenido: Que desea hacer? \n")
+            opcion=int(input("1: Ingresar vehiculos \n2: Sacar vehiculos \n3: Ver cola \n*: Salir \n"))
+            if(opcion==1):
+                cantidad=int(input("Cuantos vehiculos desea ingresar? \n"))
+                while(cantidad!=0):
+                    vehiculo=self.revolver()
+                    vehi=vehiculo.pop(0)
+                    for v in vehi:
+                        self.encolar(v)
+                    cantidad=cantidad-1
+            else:
+                if(opcion==2):
+                    cantidad=int(input("Cuantos vehiculos desea sacar? \n"))*2
+                    while(cantidad!=0):
+                        self.desencolar()
+                        cantidad=cantidad-1
+                else:
+                    if(opcion==3):
+                        print(list(self.items))
+                    else:
+                        print("Por favor ingrese una opcion validad")
+            verificacion=input("Desea continuar? S/N ")
+                    
     
 cola=Cola()
+cola.funcionar()
 
-print("Bienvenido:")
-opcion=int(input("Cuantos vehiculos desea ingresar?"))
-while(opcion!=0):
-    vehiculo=cola.revolver()
-    vehi=vehiculo.pop(0)
-    for v in vehi:
-        cola.encolar(v)
-    opcion=opcion-1
-print(list(cola.items))
-
-opcion=int(input("Cuantos vehiculos desea sacar?"))*2 
-while(opcion!=0):
-    cola.desencolar()
-    opcion=opcion-1
-print(cola.items)
