@@ -1,0 +1,4 @@
+resultado: 0
+resultado: -3
+resultado: 18
+resultado: 2
