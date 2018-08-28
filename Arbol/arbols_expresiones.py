@@ -15,6 +15,8 @@ def convertir(lista, pila):
 diccionario = dict()
 
 def evaluar(arbol):
+    if arbol.valor in "abcdefghijklmnopqrstuvwxyz":
+        return diccionario[arbol.valor]
     if arbol.valor == "+":
         return evaluar(arbol.izq) + evaluar(arbol.der)
     if arbol.valor == "-":
@@ -26,16 +28,7 @@ def evaluar(arbol):
     if arbol.valor == "=":
         diccionario[arbol.der.valor]=evaluar(arbol.izq)
         return str(arbol.der.valor)+" = "+str(evaluar(arbol.izq))
-    else:
-
-        #evalular si ya existe esa llave en el dict
-        
-
-        diccionario.get(arbol.valor)
-        
-        
-        
-    #Debo poner los casos donde aparezcan letras
+   
     return int(arbol.valor)
 
     
