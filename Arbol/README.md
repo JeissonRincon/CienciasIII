@@ -5,3 +5,4 @@
 
 Carpeta correspondiente al código de de implementación de arboles para el desarrollo de operaciones en postfijo con el uso de archivos.
 
+Sugerencia mía -> usar cola en vez de pila
