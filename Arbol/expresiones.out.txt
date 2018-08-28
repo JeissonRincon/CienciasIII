@@ -1,3 +1,4 @@
 resultado: c = 10
 resultado: b = 3
 resultado: a = 2
+resultado: 7
