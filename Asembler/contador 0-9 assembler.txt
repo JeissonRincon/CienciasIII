@@ -1,0 +1,65 @@
+	LIST  P=06F877A
+	INCLUDE <P16F877A.INC>
+
+	CBLOCK  2AH
+	CONT
+	R1
+	R2
+	R3
+	ENDC
+	
+	V1 EQU .50
+	V2 EQU .60
+	V3 EQU .70
+
+	ORG 00H
+	goto INICIO
+	ORG 05H
+TABLA
+
+	addwf PCL,F ;2F
+	retlw 0c0H  ;30
+	retlw 0F9H  ;31
+	retlw 0A4H  ;32
+	retlw 0B0H  ;33
+	retlw 099H  ;34
+	retlw 092H  ;35
+	retlw 082H  ;36
+	retlw 0F8H  ;37
+	retlw 080H  ;38
+	retlw 090H  ;39
+RETARDO
+	movlw V1
+	movlw V1
+     S3 movlw V1
+	movlw V1
+     S2 movlw V1
+	movlw V1
+     S1 movlw V1
+	goto S2
+	decfsz R1
+	goto S3
+
+	return
+INICIO
+	BANKSEL TRISB
+	clrf TRISB
+	clrf TRISC
+	BANKSEL PORTB
+	clrf PORTB
+	clrf PORTC
+	bsf PORTC,0
+SALTOSI clrf CONT
+SALTONO movf CONT,0
+	call TABLA
+	movwf PORTB
+	call RETARDO
+	incf CONT,1
+	movf CONT,0
+	xorlw .10
+	btfss STATUS,Z
+	goto SALTONO
+	goto SALTOSI
+
+	END
+	
