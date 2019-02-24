@@ -1,0 +1,56 @@
+
+    digraph xtext {
+    fontname = "Bitstream Vera Sans"
+    fontsize = 8
+    node[
+        shape=record,
+        style=filled,
+        fillcolor=aliceblue
+    ]
+    nodesep = 0.3
+    edge[dir=black,arrowtail=empty]
+
+
+52072968 -> 51681640[arrowtail=diamond, dir=both, headlabel="tipos 0..*"]
+52072968 -> 52074384[arrowtail=diamond, dir=both, headlabel="entidades 1..*"]
+52072968[ label="{ModeloEntidad|}"]
+
+52074384 -> 52075800[arrowtail=diamond, dir=both, headlabel="propiedades 1..*"]
+52074384[ label="{Entidad|+nombre:ID\l}"]
+
+52075800 -> 52085728[headlabel="tipo "]
+52075800[ label="{Propiedad|+nombre:ID\l}"]
+
+52085728[ label="{*Tipo|}"]
+52085728 -> 51681640 [dir=back]
+52085728 -> 52074384 [dir=back]
+
+51681640[ label="{TipoSimple|+nombre:ID\l}"]
+
+52087144[ label="{Comment|\\/\\/.*$}"]
+
+51729376[ label="{ID|}"]
+
+51967888[ label="{STRING|}"]
+
+51969304[ label="{BOOL|}"]
+
+51975136[ label="{INT|}"]
+
+51976552[ label="{FLOAT|}"]
+
+51978288[ label="{NUMBER|}"]
+51978288 -> 51976552 [dir=back]
+51978288 -> 51975136 [dir=back]
+
+51979704[ label="{BASETYPE|}"]
+51979704 -> 51978288 [dir=back]
+51979704 -> 51969304 [dir=back]
+51979704 -> 51729376 [dir=back]
+51979704 -> 51967888 [dir=back]
+
+51981120[ label="{*OBJECT|}"]
+51981120 -> 51979704 [dir=back]
+
+
+}

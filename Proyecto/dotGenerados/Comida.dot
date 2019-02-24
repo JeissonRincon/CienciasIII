@@ -1,0 +1,32 @@
+
+    digraph xtext {
+    fontname = "Bitstream Vera Sans"
+    fontsize = 8
+    node[
+        shape=record,
+        style=filled,
+        fillcolor=aliceblue
+    ]
+    nodesep = 0.3
+    edge[dir=black,arrowtail=empty]
+
+
+51745168 -> 51745264 [label="entidades:0" arrowtail=diamond dir=both]
+51745264 -> 46437296 [label="propiedades:0" arrowtail=diamond dir=both]
+46437296 -> 51939440 [label="tipo" ]
+51939440[label="{:TipoSimple|+nombre:str='string'\l}"]
+46437296[label="{:Propiedad|+nombre:str='nombre'\l}"]
+51745264 -> 48310672 [label="propiedades:1" arrowtail=diamond dir=both]
+48310672 -> 51939440 [label="tipo" ]
+48310672[label="{:Propiedad|+nombre:str='tipo'\l}"]
+51745264 -> 48309648 [label="propiedades:2" arrowtail=diamond dir=both]
+48309648 -> 51939440 [label="tipo" ]
+48309648[label="{:Propiedad|+nombre:str='porcion'\l}"]
+51745264 -> 51807248 [label="propiedades:3" arrowtail=diamond dir=both]
+51807248 -> 51939600 [label="tipo" ]
+51939600[label="{:TipoSimple|+nombre:str='integer'\l}"]
+51807248[label="{:Propiedad|+nombre:str='precio'\l}"]
+51745264[label="{:Entidad|+nombre:str='Comida'\l}"]
+51745168[label="{:ModeloEntidad|tipos:list=[]\l}"]
+
+}

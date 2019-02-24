@@ -1,0 +1,134 @@
+[
+  {
+    "nombre" : "Arroz con pollo",
+    "tipo" : "Plato seco",
+    "porcion" : "Una persona",
+    "precio" : 12000
+  },
+  {
+    "nombre" : "Bandeja paisa",
+    "tipo" : "Plato seco",
+    "porcion" : "Una persona",
+    "precio" : 12000
+  },
+  {
+    "nombre" : "Pechuga Gratinada",
+    "tipo" : "Plato seco",
+    "porcion" : "Una persona",
+    "precio" : 18000
+  },
+  {
+    "nombre" : "Churrasco",
+    "tipo" : "Plato seco",
+    "porcion" : "Una persona",
+    "precio" : 15000
+  },
+  {
+    "nombre" : "Carne Asada",
+    "tipo" : "Plato seco",
+    "porcion" : "Una persona",
+    "precio" : 12000
+  },
+  {
+    "nombre" : "Pollo apanado",
+    "tipo" : "Plato seco",
+    "porcion" : "Una persona",
+    "precio" : 12000
+  },
+  {
+    "nombre" : "Rollitos de cerdo en salsa",
+    "tipo" : "Plato seco",
+    "porcion" : "Una persona",
+    "precio" : 18000
+  },
+  {
+    "nombre" : "Lassagna",
+    "tipo" : "Plato seco",
+    "porcion" : "Una persona",
+    "precio" : 12000
+  },
+  {
+    "nombre" : "Spaghetti en salsa Bolognesa",
+    "tipo" : "Plato seco",
+    "porcion" : "Una persona",
+    "precio" : 15000
+  },
+  {
+    "nombre" : "Mondongo",
+    "tipo" : "Sopa",
+    "porcion" : "Una persona",
+    "precio" : 8000
+  },
+  {
+    "nombre" : "Ajiaco",
+    "tipo" : "Sopa",
+    "porcion" : "Una persona",
+    "precio" : 8000
+  },
+  {
+    "nombre" : "Sopa de pasta",
+    "tipo" : "Sopa",
+    "porcion" : "Una persona",
+    "precio" : 8000
+  },
+  {
+    "nombre" : "Peto",
+    "tipo" : "Sopa",
+    "porcion" : "Una persona",
+    "precio" : 8000
+  },
+  {
+    "nombre" : "Chilpachole",
+    "tipo" : "Sopa",
+    "porcion" : "Una persona",
+    "precio" : 8000
+  },
+  {
+    "nombre" : "Jugo natural",
+    "tipo" : "Bebida",
+    "porcion" : "Una persona",
+    "precio" : 3000
+  },
+  {
+    "nombre" : "Gaseosa",
+    "tipo" : "Bebida",
+    "porcion" : "Una persona",
+    "precio" : 3000
+  },
+  {
+    "nombre" : "Cerveza",
+    "tipo" : "Bebida",
+    "porcion" : "Una persona",
+    "precio" : 3000
+  },
+  {
+    "nombre" : "Limonada",
+    "tipo" : "Bebida",
+    "porcion" : "4 Personas",
+    "precio" : 10000
+  },
+  {
+    "nombre" : "Refajo",
+    "tipo" : "Bebida",
+    "porcion" : "4 Personas",
+    "precio" : 10000
+  },
+  {
+    "nombre" : "Tres Leches",
+    "tipo" : "Postre",
+    "porcion" : "Una persona",
+    "precio" : 4000
+  },
+  {
+    "nombre" : "Gelatina",
+    "tipo" : "Sopa",
+    "porcion" : "Una persona",
+    "precio" : 4000
+  },
+  {
+    "nombre" : "Arroz con leche",
+    "tipo" : "Sopa",
+    "porcion" : "Una persona",
+    "precio" : 4000
+  }
+]

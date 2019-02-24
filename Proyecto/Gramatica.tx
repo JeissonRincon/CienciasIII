@@ -1,0 +1,34 @@
+/*
+  Entity DSL grammar.
+*/
+ModeloEntidad:
+    tipos*=TipoSimple       // At the beginning of model we can define
+                            // zero or more simple types.
+    entidades+=Entidad        // Each model has one or more entities.
+;
+
+Entidad:
+    'entidad' nombre=ID '{'
+        propiedades+=Propiedad // Each entity has one or more properties.
+    '}'
+;
+
+Propiedad:
+    nombre=ID ':' tipo=[Tipo]     // type is a reference to Type instance.
+                                // There are two built-in simple types
+                                // registered on meta-model in entity_test.py
+;
+
+// Type can be SimpleType or Entity
+Tipo:
+    TipoSimple | Entidad
+;
+
+TipoSimple:
+    'tipo' nombre=ID
+;
+
+// Special rule for comments. Comments start with //
+Comment:
+    /\/\/.*$/
+;

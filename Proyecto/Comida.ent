@@ -1,0 +1,6 @@
+entidad Comida {
+  nombre : texto
+  tipo : texto
+  porcion : texto
+  precio : entero
+}
